@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('views/partials/head'); %>
+</head>
+
+<body>
+
+    <header>
+        <%- include('views/partials/header'); %>
+        <% UserInfo.forEach(function(UserInfo) { %>
+            <strong><%= UserInfo.name %></strong>
+        <% }) %>
+    </header>
+    <div class="header">
+        <div class="nav-slider">
+            <img src="images/menu.png" alt="nav slider">
+        </div>
+        <div class="logo">
+            <p><img src="images/bunny.jpg" alt="pancake logo">PancakeSwap</p>
+        </div>
+        <div class="connect">
+            <div class="connect-btn">
+                <button class="connect-btn">Connect</button>
+            </div>
+            <div class="connect-identify">
+                <img src="images/bunny.jpg" alt="black-bunny">
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-content">
+            <ul>
+                <li><i>icon1</i><a class="nav-hide" href="home">Home</a></li>
+                <li><i>icon2</i><a class="nav-hide" href="trade">Trade</a></li>
+                <li><i>icon3</i><a class="nav-hide" href="farms">Farms</a></li>
+                <li id="settings"><i>icon4</i></li>
+            </ul>
+        </div>
+
+        <div class="nav-footer">
+            <div class="nav-footer-content">
+                <div class="cake-price">
+                    <p><i>icon5</i>$16.791</p>
+                </div>
+                <div class="contact">
+                    <p><i>icon6</i><i>icon7</i></p>
+                </div>
+                <div class="mood">
+                    <p><i>icon8</i>/<i>icon9</i></p>
+                </div>
+                <div class="language">
+                    <p><i>icon10</i> EN</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main col-8">
+        <div class="poster">
+            <div class="poster-img">
+                <img id="img-left" src="images/pancake and pan left.jpg" alt="pancake image">
+                <img id="img-right" src="images/pancake and pan right.jpg" alt="pancake image">
+            </div>
+            <div class="poster-h">
+                <h1 class="main-h">PancakeSwap</h1>
+                <p class="main-first-p">The #1 AMM and yield farm on Binance Smart Chain</p>
+            </div>
+        </div>
+
+        <div class="farms-and-staking part col-s-12 ">
+            <form action="/name" method="POST">
+                <label for="say">What greeting do you want to say?</label>
+                <input name="say" id="say" value="Hi">
+                <input type="submit">
+            </form>
+        </div>
+ 
+        <div class="your-lottery part col-s-12 ">
+            <h2 class="main-h">Your Lottery Winnings</h2>
+            <img src="images/lottery.png" alt="pancake lottery image">
+            <p class="main-p">CAKE to Collect:</p>
+            <p class="main-info-p">Locked</p>
+            <p class="main-p">Total jackpot this round:</p>
+            <p class="main-soon-p">Coming Soon</p>
+            <button class="btn">Unlock Wallet</button>
+        </div>
+
+        <div class="earn-apr part col-s-12 ">
+            <h3 class="main-h">Earn up to</h3>
+            <p class="main-soon-p">317.14%</p>
+            <h3 class="main-h">APR in Farms</h3>
+            <img src="images/right arrow.png" alt="right icon">
+        </div>
+
+        <div class="earn-pool part col-s-12 ">
+            <h3 class="main-h">Earn</h3>
+            <p class="main-black-p">CAKE, ODDZ, BONDLY, MARSH</p>
+            <h3 class="main-h">in Pools</h3>
+            <img src="images/right arrow.png" alt="right icon">
+        </div>
+
+        <div class="lottery part col-s-12 ">
+            <h3 class="main-h">Lottery</h3>
+            <p class="main-soon-p">Coming Soon</p>
+            <img src="images/right arrow.png" alt="right icon">
+        </div>
+        
+        <div class="cake-stats part col-s-12 ">
+            <h3 class="main-h"></h3>
+            
+            <table>
+                <tr>
+                    <td>Total CAKE Suply</td>
+                    <td class="td2">180,290,003</td>
+                </tr>
+                <tr>
+                    <td>Total CAKE Burned</td>
+                    <td class="td2">140,038,248</td>
+                </tr>
+                <tr>
+                    <td>New CAKE/block</td>
+                    <td class="td2">20</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="tvl part col-s-12 ">
+            <h3 class="main-h">Total Value Locked(TVL)</h3>
+            <p class="main-soon-p">$7,464,214,169</p>
+            <p class="main-p">Across all LPs and Syrup Pools</p>
+        </div>
+    </div>
+
+    <footer>
+        <%- include('views/partials/footer'); %>
+    </footer>
+    
+    <script>
+        $(document).ready(function(){
+
+            $(".connect-btn").click(function(){
+                alert("open metamask");
+            })
+
+            $(".nav-slider img").click(function(){
+                $(".nav-hide").toggle();
+                $(".nav-footer-content").toggle();
+                $(".nav").toggle()
+            })
+
+        })
+    </script>
+</body>
+</html>

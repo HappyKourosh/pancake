@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1.main-h{
+    color: rgb(139, 101, 167);
+    text-align: center;
+}
+
+h2.main-h{
+    color: white;
+    font-size: 35px;
+}
+
+h3.main-h{
+    color: white;
+    font-size: 25px;
+}
+
+.main-first-p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-p{
+    color: white;
+}
+
+.main-black-p{
+    color: black;
+    font-size: 25px;
+}
+
+.main-soon-p{
+    color: rgb(139, 101, 167);
+    font-size: 25px;
+    font-weight: bolder;
+    padding-top: 0px;
+    line-height: 0px;
+}
+
+.main-info-p{
+    color: rgb(82, 71, 71);
+}
+
+
+
+.part{
+    background-color: rgb(44, 46, 56);
+    padding: 0px 20px 30px 20px ;
+    margin-bottom: 20px;
+    border: 2px solid rgb(20, 20, 51);
+    border-radius: 20px;
+    position: relative;
+}
+
+.btn{
+    background-color: rgb(77, 255, 255);
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: 900;
+    width: 100%;
+}
+
+.lottery{
+    height: 200px;
+}
+
+.earn-apr{
+    height: 200px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(78, 166, 248);
+}
+
+
+
+.farms-and-staking img{
+    width: 80px;
+    height: 80px;
+}
+
+.your-lottery img{
+    width: 80px;
+    height: 80px;
+}
+
+.earn-apr img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.earn-pool img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.lottery img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.earn-pool{
+    background-image: linear-gradient(rgb(68, 233, 255), rgb(95, 17, 126));
+}
+
+.cake-stats td{
+    text-align: left;
+    color: white;
+}
+
+.td2{
+    position: absolute;
+    text-align: left;
+    right: 25px;
+}
+
+.earn-apr:hover{
+    cursor: pointer;
+    background-color: rgb(17, 11, 27);
+}
+
+.lottery:hover{
+    cursor: pointer;
+    background-color: rgb(17, 11, 27);
+}
+
+.earn-pool:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.header{
+    background-color: rgb(44, 46, 56);
+    height: 60px;
+    margin-top: -5px;
+    margin-left: -10px;
+    margin-right: -8px;
+    position: relative;
+}
+
+.nav-slider img{
+    width: 50px;
+    position: absolute;
+    left: 20px;
+    top: 2.5px;
+}
+
+.nav-slider img:hover{
+    cursor: pointer;
+}
+
+.logo{
+    position: absolute;
+    left: 100px;
+    top: -14px;
+    color: white;
+    padding-left: 10px;
+    
+}
+
+.logo img{
+    width: 50px;
+    vertical-align: -19px;
+}
+
+.connect-btn button{
+    position: absolute;
+    right: 100px;
+    top: 2px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(77, 255, 255);
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.connect-btn button:hover{
+    cursor: pointer;
+    background-color: rgb(78, 166, 248);
+}
+
+.connect-identify img{
+    width: 50px;
+    position: absolute;
+    right: 25px;
+    top: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .poster-img{
+        position: relative;
+        height: 200px;
+    }
+    .poster-img #img-left{
+        position: absolute;
+        width: 45%;
+        left: 5.1%;
+        bottom: 15px;
+        height: 120px;
+    }
+    .poster-img #img-right{
+        position: absolute;
+        width: 45%;
+        right: 5.1%;
+        bottom: 15px;
+        height: 120px;
+    }
+    .nav{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    
+}
+  @media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .poster-img{
+        position: relative;
+        height: 200px;
+    }
+    .poster-img #img-left{
+        position: absolute;
+        width: 45%;
+        left: 5.1%;
+        bottom: 15px;
+        height: 120px;
+    }
+    .poster-img #img-right{
+        position: absolute;
+        width: 45%;
+        right: 5.1%;
+        bottom: 15px;
+        height: 120px;
+    }
+    .nav{
+        display: none;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 44%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .main{
+        float: left;
+        margin-left: 16.67%;
+    }
+    .part{
+        float: left;
+        max-width: 48%;
+        margin: 1%;
+    }
+    .earn-apr,.lottery{
+        max-width: 30%;
+    }
+    .earn-pool{
+        max-width: 34%;
+    }
+    .farms-and-staking,.your-lottery{
+        height: 420px;
+    }
+    .tvl,.cake-stats{
+        height: 180px;
+    }
+    .nav{
+        display: block;
+        background-color: rgb(44, 46, 56);
+        float: left;
+        width: 4%;
+        height: 200px;
+        position: sticky;
+        position: fixed;
+        height: 1000px;
+        border: 2px solid rgb(20, 20, 51);
+        margin-left: -10px;
+    }
+ 
+    .nav ul{
+        color: white;
+        font-size: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 20px;
+        height: 100%;
+        line-height: 40px;
+    }
+    .nav ul li{
+        padding-left: 10px;
+    }
+    .nav ul li:hover{
+        cursor: pointer;
+        background-color: rgb(47, 44, 48);
+    }
+    .nav ul li a{
+        color: white;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: none;
+    }
+    .nav-footer{
+        position: fixed;
+        bottom: 0px;
+        color: white;
+        width: 13%;
+        font-size: 17px;
+        border: 2px solid rgb(20, 20, 51);
+    }
+    .nav-footer-content{
+        position: relative;
+        line-height: 40px;
+        height: 150px;
+        display: none;
+    }
+    .cake-price{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    .contact{
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
+    .mood{
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+    }
+    .language{
+        position: absolute;
+        bottom: 10px;
+        right: 25px;
+    }
+  }
+  
